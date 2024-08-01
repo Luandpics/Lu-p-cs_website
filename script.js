@@ -145,8 +145,7 @@ function getCategoryImages(category) {
             'Animaux/animaux3.JPG',
             'Animaux/animaux4.JPG',
             'Animaux/animaux5.JPG',
-            'Animaux/animaux6.JPG',
-            'Animaux/animaux7.JPG'
+            'Animaux/animaux6.JPG'
         ];
     }
     if (category === 'Portraits') {
