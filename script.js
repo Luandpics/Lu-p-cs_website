@@ -13,7 +13,7 @@ function showPage(page) {
 
     // Affiche le contenu correspondant
     if (page === 'gallery') {
-        contentDiv.innerHTML = '<p class="page-title">Mais alors... que voit mon objectif?</p>';
+        contentDiv.innerHTML = '<p class="page-title">Mais alors... qu\'immortalise mon objectif?</p>';
         document.getElementById('nav-gallery').classList.add('disabled');
         document.querySelector('.gallery').style.display = 'block';
         loadImages();
@@ -26,7 +26,6 @@ function showPage(page) {
             <div class="contact-info">
                 <p>Mon numéro de téléphone : +33648137680</p>
                 <p>Mon adresse email : Luka.pics9@gmail.com</p>
-                <p>Seule cette adresse mail exacte vous répondra, toute autre est une arnaque!</p>
                 <p>Suivez-moi sur les réseaux sociaux : <a href="https://www.instagram.com/luka_.pics/" target="_blank" class="insta-link">Instagram</a></p>
                 <p><a href="#" onclick="showPage('faq')" class="faq-link">FAQ</a></p>
             </div>
