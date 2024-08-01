@@ -128,6 +128,7 @@ function getCategoryImages(category) {
             'Sport/course1.JPG',
             'Sport/course2.JPG',
             'Sport/course3.JPG',
+            'Sport/perche.JPG',
             'Sport/perche1.JPG',
             'Sport/perche2.JPG',
             'Sport/perche3.JPG',
@@ -148,6 +149,7 @@ function getCategoryImages(category) {
     }
     if (category === 'Animaux') {
         return [
+            'Animaux/animaux.JPG',
             'Animaux/animaux1.JPG',
             'Animaux/animaux2.JPG',
             'Animaux/animaux3.JPG',
@@ -159,6 +161,7 @@ function getCategoryImages(category) {
     }
     if (category === 'Portraits') {
         return [
+            'Portraits/portrait.JPG',
             'Portraits/portrait1.JPG',
             'Portraits/portrait2.JPG',
             'Portraits/portrait3.JPG',
@@ -167,6 +170,7 @@ function getCategoryImages(category) {
     }
     if (category === 'Shooting') {
         return [
+            'Shooting/shooting.JPG',
             'Shooting/shooting1.JPG',
             'Shooting/shooting2.JPG'
         ];
