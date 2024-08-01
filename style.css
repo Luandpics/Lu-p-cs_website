@@ -16,17 +16,21 @@ header h1.logo {
     margin: 0; /* Enlève la marge par défaut */
 }
 
+header h2.subtitle {
+    font-size: 1em; /* Taille du titre plus grande */
+    margin: 0;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul.main-nav {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Espace entre les éléments */
-    margin-top: 10px; /* Espace au-dessus des liens */
+    gap: 190px; /* Espace entre les éléments */
+    margin-top: 30px; /* Espace au-dessus des liens */
 }
 
 nav ul li {
@@ -37,7 +41,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em; /* Taille des sous-titres */
+    font-size: 2em; /* Taille des sous-titres */
     font-weight: bold; /* Texte en gras */
 }
 
