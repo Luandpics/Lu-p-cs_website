@@ -202,7 +202,7 @@ function initializeFaq() {
     const faqs = [
         {
             question: 'Comment puis-je vous contacter ?',
-            answer: 'Vous pouvez me contacter via le <a href="#" onclick="showPage(\'contact\')" style="color: white;">formulaire de contact</a> de mon site.'
+            answer: 'Vous pouvez me contacter via le <a href="#" onclick="showPage(\'contact\')" style="color: white;">formulaire de contact</a> de mon site. Ou, vous pouvez aussi me DM sur instagram!.'
         },
         {
             question: 'Quels services proposez-vous ?',
