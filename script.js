@@ -202,15 +202,15 @@ function initializeFaq() {
     const faqs = [
         {
             question: 'Comment puis-je vous contacter ?',
-            answer: 'Vous pouvez me contacter via le <a href="#" onclick="showPage(\'contact\')" style="color: white;">formulaire de contact</a> de mon site. Ou, vous pouvez aussi me DM sur instagram!.'
+            answer: 'Directement sur instagram, ou via mon mail qu tu trouveras dans la page contact de mon site.'
         },
         {
             question: 'Quels services proposez-vous ?',
-            answer: 'Visite ma page galerie pour avoir une idée de ce que je fais!'
+            answer: 'Visite ma page galerie pour avoir une idée de ce que je fais! Hésite pas à venir m\'éxpliquer tes projets en DM insta!'
         },
         {
             question: 'Quels sont vos tarifs ?',
-            answer: 'Mes tarifs varient en fonction des services. Contactez-moi directement pour obtenir un devis personnalisé.'
+            answer: 'Mes tarifs varient en fonction des services. Contactez-moi directement pour obtenir un devis personnalisé, ou négocier un collab.'
         }
     ];
 
