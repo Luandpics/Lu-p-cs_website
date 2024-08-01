@@ -74,12 +74,12 @@ function showPage(page) {
 }
 
 const images = [
-    { src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Sport/perche.jpg', text: 'Sports' },
-    { src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Paysages/Toronto.jpg', text: 'Paysages' },
-    { src: 'Luandpics_website/Animaux/animaux.JPG', text: 'Animaux' },
-    { src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Portraits/portrait.jpg', text: 'Portraits' },
-    { src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Shooting/shooting.jpg', text: 'Shooting' },
-    //{ src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Events/events.jpg', text: 'Événements' },
+    { src: '/Sport/perche.jpg', text: 'Sports' },
+    { src: 'Paysages/Toronto.JPG', text: 'Paysages' },
+    { src: 'Animaux/animaux.JPG', text: 'Animaux' },
+    { src: 'Portraits/portrait.jpg', text: 'Portraits' },
+    { src: 'Shooting/shooting.jpg', text: 'Shooting' },
+    //{ src: 'Events/events.jpg', text: 'Événements' },
 ];
 
 function loadImages() {
@@ -125,48 +125,48 @@ function getCategoryImages(category) {
     // Remplacez les chemins d'accès par ceux de vos images réelles
     if (category === 'Sports') {
         return [
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Sport/perche1.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Sport/perche2.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Sport/perche3.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Sport/perche4.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Sport/perche5.jpg',
+            'Sport/perche1.jpg',
+            'Sport/perche2.jpg',
+            'Sport/perche3.jpg',
+            'Sport/perche4.jpg',
+            'Sport/perche5.jpg',
             // Ajoutez autant d'images que nécessaire
         ];
     }
     if (category === 'Paysages') {
         return [
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Paysages/paysage1.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Paysages/paysage2.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Paysages/paysage3.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Paysages/paysage4.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Paysages/paysage5.jpg',
+            'Paysages/paysage1.jpg',
+            'Paysages/paysage2.jpg',
+            'Paysages/paysage3.jpg',
+            'Paysages/paysage4.jpg',
+            'Paysages/paysage5.jpg',
         ];
     }
     if (category === 'Animaux') {
         return [
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Animaux/animaux1.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Animaux/animaux2.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Animaux/animaux3.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Animaux/animaux4.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Animaux/animaux5.jpg'
+            'Animaux/animaux1.jpg',
+            'Animaux/animaux2.jpg',
+            'Animaux/animaux3.jpg',
+            'Animaux/animaux4.jpg',
+            'Animaux/animaux5.jpg'
         ];
     }
     if (category === 'Portraits') {
         return [
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Portraits/portrait1.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Portraits/portrait2.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Portraits/portrait3.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Portraits/portrait4.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Portraits/portrait5.jpg'
+            'Portraits/portrait1.jpg',
+            'Portraits/portrait2.jpg',
+            'Portraits/portrait3.jpg',
+            'Portraits/portrait4.jpg',
+            'Portraits/portrait5.jpg'
         ];
     }
     if (category === 'Shooting') {
         return [
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Shooting/shooting1.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Shooting/shooting2.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Shooting/shooting3.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Shooting/shooting4.jpg',
-            '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Shooting/shooting5.jpg'
+            'Shooting/shooting1.jpg',
+            'Shooting/shooting2.jpg',
+            'Shooting/shooting3.jpg',
+            'Shooting/shooting4.jpg',
+            'Shooting/shooting5.jpg'
         ];
     }
     return [];
