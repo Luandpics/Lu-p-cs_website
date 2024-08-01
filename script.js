@@ -13,7 +13,7 @@ function showPage(page) {
 
     // Affiche le contenu correspondant
     if (page === 'gallery') {
-        contentDiv.innerHTML = '<p class="page-title">Mais alors... qu\'immortalise mon objectif?</p>';
+        contentDiv.innerHTML = '<p class="page-title">Mais alors... que voit mon objectif?</p>';
         document.getElementById('nav-gallery').classList.add('disabled');
         document.querySelector('.gallery').style.display = 'block';
         loadImages();
@@ -21,7 +21,7 @@ function showPage(page) {
         contentDiv.innerHTML = `
             <p class="page-title">N'hésitez plus... contactez moi!</p>
             <div class="contact-image">
-                <img src="Events/event.JPG">
+                <img src="Logo/white_logo.png" alt="Contact Image">
             </div>
             <div class="contact-info">
                 <p>Mon numéro de téléphone : +33648137680</p>
