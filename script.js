@@ -125,18 +125,18 @@ function getCategoryImages(category) {
     // Remplacez les chemins d'accès par ceux de vos images réelles
     if (category === 'Sports') {
         return [
+            'Sport/course1.JPG',
+            'Sport/course2.JPG',
+            'Sport/course3.JPG',
             'Sport/perche1.JPG',
             'Sport/perche2.JPG',
             'Sport/perche3.JPG',
-            'Sport/perche4.JPG',
-            'Sport/course1.JPG',
-            'Sport/course2.JPG',
-            'Sport/course3.JPG'
-            
+            'Sport/perche4.JPG'   
         ];
     }
     if (category === 'Paysages') {
         return [
+            'Paysages/paysage.JPG',
             'Paysages/paysage1.JPG',
             'Paysages/paysage2.JPG',
             'Paysages/paysage3.JPG',
