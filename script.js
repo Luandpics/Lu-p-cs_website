@@ -75,7 +75,7 @@ function showPage(page) {
 
 const images = [
     { src: 'Sport/perche.JPG', text: 'Sports' },
-    { src: 'Paysages/Toronto.JPG', text: 'Paysages' },
+    { src: 'Paysages/paysage.JPG', text: 'Paysages' },
     { src: 'Animaux/animaux.JPG', text: 'Animaux' },
     { src: 'Portraits/portrait.JPG', text: 'Portraits' },
     { src: 'Shooting/shooting.JPG', text: 'Shooting' },
