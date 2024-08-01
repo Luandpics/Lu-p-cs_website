@@ -74,12 +74,12 @@ function showPage(page) {
 }
 
 const images = [
-    { src: '/Sport/perche.jpg', text: 'Sports' },
+    { src: 'Sport/perche.JPG', text: 'Sports' },
     { src: 'Paysages/Toronto.JPG', text: 'Paysages' },
     { src: 'Animaux/animaux.JPG', text: 'Animaux' },
-    { src: 'Portraits/portrait.jpg', text: 'Portraits' },
-    { src: 'Shooting/shooting.jpg', text: 'Shooting' },
-    //{ src: 'Events/events.jpg', text: 'Événements' },
+    { src: 'Portraits/portrait.JPG', text: 'Portraits' },
+    { src: 'Shooting/shooting.JPG', text: 'Shooting' },
+    //{ src: 'Events/events.JPG', text: 'Événements' },
 ];
 
 function loadImages() {
@@ -125,48 +125,48 @@ function getCategoryImages(category) {
     // Remplacez les chemins d'accès par ceux de vos images réelles
     if (category === 'Sports') {
         return [
-            'Sport/perche1.jpg',
-            'Sport/perche2.jpg',
-            'Sport/perche3.jpg',
-            'Sport/perche4.jpg',
-            'Sport/perche5.jpg',
+            'Sport/perche1.JPG',
+            'Sport/perche2.JPG',
+            'Sport/perche3.JPG',
+            'Sport/perche4.JPG',
+            'Sport/perche5.JPG',
             // Ajoutez autant d'images que nécessaire
         ];
     }
     if (category === 'Paysages') {
         return [
-            'Paysages/paysage1.jpg',
-            'Paysages/paysage2.jpg',
-            'Paysages/paysage3.jpg',
-            'Paysages/paysage4.jpg',
-            'Paysages/paysage5.jpg',
+            'Paysages/paysage1.JPG',
+            'Paysages/paysage2.JPG',
+            'Paysages/paysage3.JPG',
+            'Paysages/paysage4.JPG',
+            'Paysages/paysage5.JPG',
         ];
     }
     if (category === 'Animaux') {
         return [
-            'Animaux/animaux1.jpg',
-            'Animaux/animaux2.jpg',
-            'Animaux/animaux3.jpg',
-            'Animaux/animaux4.jpg',
-            'Animaux/animaux5.jpg'
+            'Animaux/animaux1.JPG',
+            'Animaux/animaux2.JPG',
+            'Animaux/animaux3.JPG',
+            'Animaux/animaux4.JPG',
+            'Animaux/animaux5.JPG'
         ];
     }
     if (category === 'Portraits') {
         return [
-            'Portraits/portrait1.jpg',
-            'Portraits/portrait2.jpg',
-            'Portraits/portrait3.jpg',
-            'Portraits/portrait4.jpg',
-            'Portraits/portrait5.jpg'
+            'Portraits/portrait1.JPG',
+            'Portraits/portrait2.JPG',
+            'Portraits/portrait3.JPG',
+            'Portraits/portrait4.JPG',
+            'Portraits/portrait5.JPG'
         ];
     }
     if (category === 'Shooting') {
         return [
-            'Shooting/shooting1.jpg',
-            'Shooting/shooting2.jpg',
-            'Shooting/shooting3.jpg',
-            'Shooting/shooting4.jpg',
-            'Shooting/shooting5.jpg'
+            'Shooting/shooting1.JPG',
+            'Shooting/shooting2.JPG',
+            'Shooting/shooting3.JPG',
+            'Shooting/shooting4.JPG',
+            'Shooting/shooting5.JPG'
         ];
     }
     return [];
