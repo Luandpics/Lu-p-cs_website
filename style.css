@@ -163,89 +163,11 @@ nav ul li a.disabled {
     color: rgb(138, 58, 185); /* Couleur spécifique pour le lien Instagram */
 }
 
-.contact-info a.faq-link {
-    color: whitesmoke; /* Couleur spécifique pour le lien FAQ */
-}
 
 .contact-info a:hover {
     text-decoration: underline;
 }
 
-/* Style pour la FAQ */
-.faq-item {
-    background-color: #333;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-.faq-item h3 {
-    font-size: 1.5em; /* Taille de police pour les titres des questions fréquentes */
-    margin-bottom: 5px;
-    font-weight: bold; /* Texte en gras */
-}
-
-.faq-item p {
-    font-size: 1em; /* Taille de police pour le texte des questions fréquentes */
-    margin: 5px 0;
-    font-weight: normal; /* Texte sans gras */
-}
-
-#question-form {
-    margin-top: 20px;
-}
-
-#question-form label {
-    font-size: 1.5em; /* Taille de police pour les labels du formulaire de question */
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold; /* Texte en gras */
-}
-
-#question-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.5em; /* Taille de police pour les champs du formulaire */
-    background-color: #c0c0c0;
-    color: black;
-    font-weight: bold; /* Texte en gras */
-}
-
-#question-form button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1em; /* Taille de police pour les boutons */
-    color: white;
-    background-color: #444;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif; /* Police Times New Roman */
-    font-weight: normal; /* Texte sans gras */
-}
-
-#question-form button:hover {
-    background-color: #666;
-}
-
-.button-common {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1em; /* Taille de police pour les boutons */
-    color: white;
-    background-color: #444;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif; /* Police Times New Roman */
-    font-weight: normal; /* Texte sans gras */
-}
-
-.button-common:hover {
-    background-color: #666;
-}
 .contact-image {
     display: flex;
     justify-content: center;

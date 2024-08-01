@@ -21,36 +21,17 @@ function showPage(page) {
         contentDiv.innerHTML = `
             <p class="page-title">N'hésitez plus... contactez moi!</p>
             <div class="contact-image">
-                <img src="Logo/white_logo.png" alt="Contact Image">
+                <img src="/Users/lukasegouin/Documents/Site_Luka&p!cs/Logo/white_logo.png" alt="Contact Image">
             </div>
             <div class="contact-info">
                 <p>Mon numéro de téléphone : +33648137680</p>
                 <p>Mon adresse email : Luka.pics9@gmail.com</p>
                 <p>Suivez-moi sur les réseaux sociaux : <a href="https://www.instagram.com/luka_.pics/" target="_blank" class="insta-link">Instagram</a></p>
-                <p><a href="#" onclick="showPage('faq')" class="faq-link">FAQ</a></p>
             </div>
         `;
         document.getElementById('nav-contact').classList.add('disabled');
         document.querySelector('.gallery').style.display = 'none';    
-    } else if (page === 'faq') {
-        contentDiv.innerHTML = `
-            <h2>Questions Fréquentes</h2>
-            <div id="faq-list">
-                <!-- Les questions et réponses les plus pertinentes seront affichées ici -->
-            </div>
-            <button id="show-all" class="button-common">Afficher tout</button>
-            <button id="show-less" class="button-common" style="display:none;">Afficher moins</button>
-            <h3>Posez une question</h3>
-            <form id="question-form">
-                <label for="question">Votre question :</label>
-                <textarea id="question" name="question" rows="4" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        `;
-        document.getElementById('nav-faq').classList.add('disabled');
-        document.querySelector('.gallery').style.display = 'none';
-        
-        initializeFaq();
+
     } else if (page.startsWith('image')) {
         const imageIndex = page.split('-')[1];
         const image = images[imageIndex];
@@ -145,7 +126,8 @@ function getCategoryImages(category) {
             'Animaux/animaux3.JPG',
             'Animaux/animaux4.JPG',
             'Animaux/animaux5.JPG',
-            'Animaux/animaux6.JPG'
+            'Animaux/animaux6.JPG',
+            'Animaux/animaux7.JPG'
         ];
     }
     if (category === 'Portraits') {
@@ -165,110 +147,4 @@ function getCategoryImages(category) {
         ];
     }
     return [];
-}
-
-function openModal(src) {
-    const modal = document.createElement('div');
-    modal.classList.add('modal');
-    modal.innerHTML = `
-        <span class="close">&times;</span>
-        <img class="modal-content" src="${src}">
-    `;
-    document.body.appendChild(modal);
-
-    const closeBtn = modal.querySelector('.close');
-    closeBtn.onclick = () => {
-        modal.remove();
-    };
-}
-
-function initializeFaq() {
-    const faqList = document.getElementById('faq-list');
-    const questionForm = document.getElementById('question-form');
-    const showAllButton = document.getElementById('show-all');
-    const showLessButton = document.getElementById('show-less');
-
-    const faqs = [
-        {
-            question: 'Comment puis-je vous contacter ?',
-            answer: 'Directement sur instagram, ou via mon mail que tu trouveras dans la page contact de mon site.'
-        },
-        {
-            question: 'Quels services proposez-vous ?',
-            answer: 'Visite ma page galerie pour avoir une idée de ce que je fais, mais n\'hésite pas à venir m\'éxpliquer tes projets en DM insta!'
-        },
-        {
-            question: 'Quels sont vos tarifs ?',
-            answer: 'Mes tarifs varient en fonction des services. Contacte-moi directement pour obtenir un devis personnalisé, ou négocier un collab.'
-        }
-    ];
-
-    let displayedFaqs = [];
-
-    function displayFaqs() {
-        faqList.innerHTML = '';
-        displayedFaqs.forEach(faq => {
-            const faqItem = document.createElement('div');
-            faqItem.classList.add('faq-item');
-            faqItem.innerHTML = `
-                <h3>${faq.question}</h3>
-                <p>${faq.answer}</p>
-                ${faq.answer === 'Réponse en attente...' ? '<button onclick="replyFaq(this)" class="button-common">Répondre</button>' : ''}
-            `;
-            faqList.appendChild(faqItem);
-        });
-    }
-
-    function showAllFaqs() {
-        displayedFaqs = faqs;
-        displayFaqs();
-        showAllButton.style.display = 'none';
-        showLessButton.style.display = 'inline';
-    }
-
-    function showLessFaqs() {
-        displayedFaqs = faqs.slice(0, 3); // Afficher les 3 questions les plus pertinentes
-        displayFaqs();
-        showLessButton.style.display = 'none';
-        showAllButton.style.display = 'inline';
-    }
-
-    function replyFaq(button) {
-        const faqItem = button.parentElement;
-        const question = faqItem.querySelector('h3').textContent;
-        const answerForm = document.createElement('form');
-        answerForm.innerHTML = `
-            <label for="answer">Votre réponse :</label>
-            <textarea name="answer" rows="2" required></textarea>
-            <button type="submit" class="button-common">Répondre</button>
-        `;
-        faqItem.appendChild(answerForm);
-
-        answerForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const answer = answerForm.querySelector('textarea').value;
-            const faq = faqs.find(f => f.question === question);
-            faq.answer = answer;
-            displayFaqs();
-        });
-    }
-
-    questionForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const newQuestion = document.getElementById('question').value;
-        const newFaq = {
-            question: newQuestion,
-            answer: 'Réponse en attente...'
-        };
-        faqs.push(newFaq);
-        displayedFaqs.push(newFaq);
-        displayFaqs();
-        questionForm.reset();
-    });
-
-    showAllButton.addEventListener('click', showAllFaqs);
-    showLessButton.addEventListener('click', showLessFaqs);
-
-    displayedFaqs = faqs.slice(0, 3); // Afficher les 3 questions les plus pertinentes
-    displayFaqs();
 }
