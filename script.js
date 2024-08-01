@@ -21,7 +21,7 @@ function showPage(page) {
         contentDiv.innerHTML = `
             <p class="page-title">N'hésitez plus... contactez moi!</p>
             <div class="contact-image">
-                <img src="votre_image.jpg" alt="Contact Image">
+                <img src="Events/event.JPG">
             </div>
             <div class="contact-info">
                 <p>Mon numéro de téléphone : +33648137680</p>
