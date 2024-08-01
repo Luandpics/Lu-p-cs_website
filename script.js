@@ -76,7 +76,7 @@ function showPage(page) {
 const images = [
     { src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Sport/perche.jpg', text: 'Sports' },
     { src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Paysages/Toronto.jpg', text: 'Paysages' },
-    { src: 'Animaux/animaux.JPG', text: 'Animaux' },
+    { src: 'Luandpics_website/Animaux/animaux.JPG', text: 'Animaux' },
     { src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Portraits/portrait.jpg', text: 'Portraits' },
     { src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Shooting/shooting.jpg', text: 'Shooting' },
     //{ src: '/Users/lukasegouin/Documents/Site Luka&p!cs/images/Events/events.jpg', text: 'Événements' },
