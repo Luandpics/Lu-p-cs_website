@@ -272,3 +272,17 @@ function initializeFaq() {
     displayedFaqs = faqs.slice(0, 3); // Afficher les 3 questions les plus pertinentes
     displayFaqs();
 }
+function openModal(src) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = `
+        <span class="close">&times;</span>
+        <img class="modal-content" src="${src}">
+    `;
+    document.body.appendChild(modal);
+
+    const closeBtn = modal.querySelector('.close');
+    closeBtn.onclick = () => {
+        modal.remove();
+    };
+}
