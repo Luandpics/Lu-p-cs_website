@@ -20,18 +20,9 @@ function showPage(page) {
     } else if (page === 'contact') {
         contentDiv.innerHTML = `
             <p class="page-title">N'hésitez plus... contactez moi!</p>
-            <form class="contact-form" action="mailto:Luka.pics9@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Nom</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Envoyer</button>
-            </form>
+            <div class="contact-image">
+                <img src="votre_image.jpg" alt="Contact Image">
+            </div>
             <div class="contact-info">
                 <p>Mon numéro de téléphone : +33648137680</p>
                 <p>Mon adresse email : Luka.pics9@gmail.com</p>
@@ -41,7 +32,7 @@ function showPage(page) {
             </div>
         `;
         document.getElementById('nav-contact').classList.add('disabled');
-        document.querySelector('.gallery').style.display = 'none';
+        document.querySelector('.gallery').style.display = 'none';    
     } else if (page === 'faq') {
         contentDiv.innerHTML = `
             <h2>Questions Fréquentes</h2>
@@ -202,7 +193,7 @@ function initializeFaq() {
     const faqs = [
         {
             question: 'Comment puis-je vous contacter ?',
-            answer: 'Directement sur instagram, ou via mon mail qu tu trouveras dans la page contact de mon site.'
+            answer: 'Directement sur instagram, ou via mon mail que tu trouveras dans la page contact de mon site.'
         },
         {
             question: 'Quels services proposez-vous ?',
