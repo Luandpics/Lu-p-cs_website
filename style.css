@@ -53,8 +53,7 @@ nav ul li a.disabled {
 }
 
 #content {
-    text-align: left; /* Aligne le texte à gauche */
-    padding-left: 25px; /* Espace à gauche pour le contenu */
+    text-align: center; /* Aligne le texte au centre */
     margin-top: 20px; /* Espace au-dessus du contenu */
     font-size: 1.5em; /* Taille de police pour le contenu */
     font-weight: bold; /* Texte en gras */
@@ -139,72 +138,11 @@ nav ul li a.disabled {
     cursor: pointer;
 }
 
-/* Style pour le formulaire de contact */
-.contact-form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-form label {
-    font-size: 1.5em; /* Taille de police pour les labels du formulaire de contact */
-    margin: 10px 0 5px;
-    font-weight: bold; /* Texte en gras */
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.5em; /* Taille de police pour les champs du formulaire */
-    background-color: #c0c0c0; /* Fond gris plus foncé */
-    color: black; /* Couleur du texte noir */
-    font-weight: bold; /* Texte en gras */
-}
-
-.contact-form button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1em; /* Taille de police pour les boutons */
-    color: white;
-    background-color: #444;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif; /* Police Times New Roman */
-    font-weight: normal; /* Texte sans gras */
-}
-
-.contact-form button:hover {
-    background-color: #666;
-}
-
-.button-common {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1em; /* Taille de police pour les boutons */
-    color: white;
-    background-color: #444;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif; /* Police Times New Roman */
-    font-weight: normal; /* Texte sans gras */
-}
-
-.button-common:hover {
-    background-color: #666;
-}
-
 /* Style pour les informations de contact supplémentaires */
 .contact-info {
     margin-top: 20px;
-    font-size: 0.7em;
-    text-align: left;
+    font-size: 1em;
+    text-align: center; /* Centré */
 }
 
 .contact-info p {
@@ -286,4 +224,32 @@ nav ul li a.disabled {
 
 #question-form button:hover {
     background-color: #666;
+}
+
+.button-common {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em; /* Taille de police pour les boutons */
+    color: white;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif; /* Police Times New Roman */
+    font-weight: normal; /* Texte sans gras */
+}
+
+.button-common:hover {
+    background-color: #666;
+}
+.contact-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
