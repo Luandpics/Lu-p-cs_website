@@ -1,30 +1,259 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luka&p!cs - Le monde à travers mon objectif</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1 class="logo">Lu&p!cs</h1>
-        <nav>
-            <ul class="main-nav">
-                <li><a href="#gallery" id="nav-gallery" onclick="showPage('gallery')">Galerie</a></li>
-                <li><a href="#contact" id="nav-contact" onclick="showPage('contact')">Contact</a></li>
-                <li><a href="#faq" id="nav-faq" onclick="showPage('faq')">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="content">
-        <p class="page-title">Mais alors... qu'immortalise mon objectif?</p>
-    </div>
-    <div class="gallery">
-        <div class="image-grid">
-            <!-- Les images seront insérées ici via JavaScript -->
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+body {
+    background-color: black; /* Fond noir */
+    color: white; /* Texte blanc */
+    margin: 25px;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+header {
+    padding: 30px;
+}
+
+header h1.logo {
+    font-size: 4em; /* Taille du titre plus grande */
+    margin: 0; /* Enlève la marge par défaut */
+}
+
+header h2.subtitle {
+    font-size: 1em; /* Taille du titre plus grande */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 190px; /* Espace entre les éléments */
+    margin-top: 30px; /* Espace au-dessus des liens */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em; /* Taille des sous-titres */
+    font-weight: bold; /* Texte en gras */
+}
+
+nav ul li a:hover:not(.disabled) {
+    text-decoration: underline;
+}
+
+nav ul li a.disabled {
+    pointer-events: none;
+    color: gray; /* Change la couleur pour indiquer que c'est désactivé */
+    text-decoration: none;
+    cursor: default;
+}
+
+#content {
+    text-align: center; /* Aligne le texte au centre */
+    margin-top: 20px; /* Espace au-dessus du contenu */
+    font-size: 1.5em; /* Taille de police pour le contenu */
+    font-weight: bold; /* Texte en gras */
+}
+
+.page-title {
+    font-size: 2em; /* Taille de police pour les titres de page */
+    font-weight: bold; /* Texte en gras */
+}
+
+.gallery {
+    display: none; /* Cacher la galerie par défaut */
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.image-item {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-item .image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+}
+
+/* Style pour les miniatures et la modale */
+.thumbnail {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style pour les informations de contact supplémentaires */
+.contact-info {
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center; /* Centré */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: white; /* Lien normal en blanc */
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.contact-info a.insta-link {
+    color: rgb(138, 58, 185); /* Couleur spécifique pour le lien Instagram */
+}
+
+.contact-info a.faq-link {
+    color: whitesmoke; /* Couleur spécifique pour le lien FAQ */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour la FAQ */
+.faq-item {
+    background-color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.faq-item h3 {
+    font-size: 1.5em; /* Taille de police pour les titres des questions fréquentes */
+    margin-bottom: 5px;
+    font-weight: bold; /* Texte en gras */
+}
+
+.faq-item p {
+    font-size: 1em; /* Taille de police pour le texte des questions fréquentes */
+    margin: 5px 0;
+    font-weight: normal; /* Texte sans gras */
+}
+
+#question-form {
+    margin-top: 20px;
+}
+
+#question-form label {
+    font-size: 1.5em; /* Taille de police pour les labels du formulaire de question */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Texte en gras */
+}
+
+#question-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5em; /* Taille de police pour les champs du formulaire */
+    background-color: #c0c0c0;
+    color: black;
+    font-weight: bold; /* Texte en gras */
+}
+
+#question-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em; /* Taille de police pour les boutons */
+    color: white;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif; /* Police Times New Roman */
+    font-weight: normal; /* Texte sans gras */
+}
+
+#question-form button:hover {
+    background-color: #666;
+}
+
+.button-common {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em; /* Taille de police pour les boutons */
+    color: white;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif; /* Police Times New Roman */
+    font-weight: normal; /* Texte sans gras */
+}
+
+.button-common:hover {
+    background-color: #666;
+}
+.contact-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
