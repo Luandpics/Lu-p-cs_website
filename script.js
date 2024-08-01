@@ -195,11 +195,11 @@ function initializeFaq() {
         },
         {
             question: 'Quels services proposez-vous ?',
-            answer: 'Visite ma page galerie pour avoir une idée de ce que je fais! Hésite pas à venir m\'éxpliquer tes projets en DM insta!'
+            answer: 'Visite ma page galerie pour avoir une idée de ce que je fais, mais n\'hésite pas à venir m\'éxpliquer tes projets en DM insta!'
         },
         {
             question: 'Quels sont vos tarifs ?',
-            answer: 'Mes tarifs varient en fonction des services. Contactez-moi directement pour obtenir un devis personnalisé, ou négocier un collab.'
+            answer: 'Mes tarifs varient en fonction des services. Contacte-moi directement pour obtenir un devis personnalisé, ou négocier un collab.'
         }
     ];
 
