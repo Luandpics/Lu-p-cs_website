@@ -29,7 +29,7 @@ nav ul {
 nav ul.main-nav {
     display: flex;
     justify-content: center;
-    gap: 190px; /* Espace entre les éléments */
+    gap: 30px; /* Espace entre les éléments */
     margin-top: 30px; /* Espace au-dessus des liens */
 }
 
@@ -256,4 +256,23 @@ nav ul li a.disabled {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.site-logo {
+    max-width: 100px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin-left: 10px;
+}
+
+.subtitle {
+    margin: 0;
 }
